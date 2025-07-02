@@ -11,7 +11,7 @@ const AboutSection = () => {
           <div className="w-24 h-1 bg-gradient-primary mx-auto rounded-full"></div>
         </div>
         
-        <div className="grid md:grid-cols-2 gap-12 items-center">
+        <div className="max-w-4xl mx-auto">
           <div className="animate-fade-in-left">
             <Card className="bg-card/50 backdrop-blur-sm border-border/50 shadow-lavender">
               <CardContent className="p-8">
@@ -34,45 +34,6 @@ const AboutSection = () => {
                   <p>
                     I'm open to opportunities in AI or full-stack engineering, especially in teams where I can continue learning, contribute to cutting-edge projects, and solve tough technical problems. Let's connect!
                   </p>
-                </div>
-              </CardContent>
-            </Card>
-          </div>
-          
-          <div className="animate-fade-in-right">
-            <Card className="bg-gradient-secondary border-border/50 shadow-glow">
-              <CardContent className="p-8">
-                <h3 className="text-2xl font-semibold text-foreground mb-6">
-                  What I Bring
-                </h3>
-                <div className="grid grid-cols-1 gap-4">
-                  {[
-                    {
-                      title: "Problem Solver",
-                      description: "I thrive on tackling complex challenges with innovative, scalable solutions."
-                    },
-                    {
-                      title: "Team Collaborator",
-                      description: "Experienced in Agile environments, leading Scrum meetings and cross-functional teams."
-                    },
-                    {
-                      title: "Continuous Learner",
-                      description: "Always staying current with emerging technologies and best practices."
-                    },
-                    {
-                      title: "Performance Focused",
-                      description: "Dedicated to optimizing systems for maximum efficiency and user experience."
-                    }
-                  ].map((skill, index) => (
-                    <div 
-                      key={index} 
-                      className="p-4 rounded-lg bg-card/30 backdrop-blur-sm animate-scale-in"
-                      style={{ animationDelay: `${index * 0.1}s` }}
-                    >
-                      <h4 className="font-semibold text-primary mb-2">{skill.title}</h4>
-                      <p className="text-sm text-muted-foreground">{skill.description}</p>
-                    </div>
-                  ))}
                 </div>
               </CardContent>
             </Card>
