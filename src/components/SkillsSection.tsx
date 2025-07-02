@@ -88,9 +88,16 @@ const SkillsSection = () => {
             Technical Skills
           </h2>
           <div className="w-24 h-1 bg-gradient-primary mx-auto rounded-full"></div>
-          <p className="text-muted-foreground mt-6 max-w-2xl mx-auto">
-            A comprehensive toolkit built through years of hands-on experience and continuous learning
-          </p>
+          <div className="mt-6">
+            <div className="flex flex-wrap justify-center gap-4">
+              <span className="text-sm text-muted-foreground">Skill Level Legend:</span>
+              <div className="flex gap-4">
+                <span className="inline-flex items-center px-3 py-1 rounded-full text-xs bg-primary text-primary-foreground">Advanced</span>
+                <span className="inline-flex items-center px-3 py-1 rounded-full text-xs bg-lavender text-white">Proficient</span>
+                <span className="inline-flex items-center px-3 py-1 rounded-full text-xs bg-secondary text-secondary-foreground">Intermediate</span>
+              </div>
+            </div>
+          </div>
         </div>
         
         <div className="grid lg:grid-cols-2 gap-8">
@@ -131,18 +138,6 @@ const SkillsSection = () => {
           ))}
         </div>
         
-        <div className="mt-12 text-center">
-          <Card className="bg-card/30 backdrop-blur-sm border-border/50 inline-block animate-fade-in" style={{ animationDelay: '0.5s' }}>
-            <CardContent className="p-6">
-              <h3 className="text-lg font-semibold text-foreground mb-2">Skill Level Legend</h3>
-              <div className="flex flex-wrap justify-center gap-4">
-                <Badge className="bg-primary text-primary-foreground">Advanced</Badge>
-                <Badge className="bg-lavender text-white">Proficient</Badge>
-                <Badge className="bg-secondary text-secondary-foreground">Intermediate</Badge>
-              </div>
-            </CardContent>
-          </Card>
-        </div>
       </div>
     </section>
   );

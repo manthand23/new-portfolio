@@ -22,23 +22,37 @@ const HeroSection = () => {
 
   return (
     <section className="min-h-screen flex items-center justify-center bg-gradient-primary relative overflow-hidden">
-      {/* Background decoration */}
-      <div className="absolute inset-0 bg-gradient-primary opacity-90"></div>
+      {/* Enhanced Background decoration with floating elements */}
+      <div className="absolute inset-0 bg-gradient-primary opacity-95"></div>
+      
+      {/* Animated floating elements */}
       <div className="absolute inset-0">
         <div className="absolute top-20 left-20 w-32 h-32 rounded-full bg-lavender/20 blur-xl animate-bounce-gentle"></div>
         <div className="absolute bottom-32 right-32 w-48 h-48 rounded-full bg-accent/20 blur-2xl animate-bounce-gentle" style={{ animationDelay: '1s' }}></div>
         <div className="absolute top-1/2 left-1/3 w-20 h-20 rounded-full bg-primary/30 blur-lg animate-bounce-gentle" style={{ animationDelay: '2s' }}></div>
+        <div className="absolute top-1/4 right-1/4 w-16 h-16 rounded-full bg-lavender/15 blur-md animate-bounce-gentle" style={{ animationDelay: '0.5s' }}></div>
+        <div className="absolute bottom-1/4 left-1/4 w-24 h-24 rounded-full bg-accent/10 blur-lg animate-bounce-gentle" style={{ animationDelay: '1.5s' }}></div>
+      </div>
+
+      {/* Geometric shapes */}
+      <div className="absolute inset-0 overflow-hidden">
+        <div className="absolute top-32 right-20 w-4 h-4 bg-white/20 rotate-45 animate-glow-pulse" style={{ animationDelay: '0.8s' }}></div>
+        <div className="absolute bottom-40 left-32 w-6 h-6 bg-lavender/30 rotate-12 animate-glow-pulse" style={{ animationDelay: '1.2s' }}></div>
+        <div className="absolute top-2/3 right-1/3 w-3 h-3 bg-accent/40 rounded-full animate-glow-pulse" style={{ animationDelay: '0.3s' }}></div>
       </div>
       
       <div className="relative z-10 text-center px-6 max-w-4xl mx-auto">
         <div className="animate-fade-in">
-          <h1 className="text-5xl md:text-7xl font-bold text-white mb-4 tracking-tight">
-            Manthan Desai
-          </h1>
-          <h2 className="text-2xl md:text-3xl text-white/90 mb-8 font-light">
+          <div className="relative inline-block">
+            <h1 className="text-5xl md:text-7xl font-bold text-white mb-4 tracking-tight relative animate-glow-pulse">
+              Manthan Desai
+              <div className="absolute -inset-1 bg-gradient-primary opacity-30 blur-lg rounded-lg animate-glow-pulse"></div>
+            </h1>
+          </div>
+          <h2 className="text-2xl md:text-3xl text-white/90 mb-8 font-light animate-fade-in" style={{ animationDelay: '0.2s' }}>
             Software Engineer
           </h2>
-          <p className="text-lg md:text-xl text-white/80 mb-12 max-w-2xl mx-auto leading-relaxed">
+          <p className="text-lg md:text-xl text-white/80 mb-12 max-w-2xl mx-auto leading-relaxed animate-fade-in" style={{ animationDelay: '0.4s' }}>
             I build scalable AI applications that optimize performance & user experience
           </p>
         </div>
