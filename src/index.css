@@ -136,6 +136,25 @@
     100% { width: 100%; }
   }
   
+  @keyframes float-up {
+    0% { 
+      opacity: 0; 
+      transform: translateY(100px); 
+    }
+    50% { 
+      opacity: 1; 
+    }
+    100% { 
+      opacity: 0; 
+      transform: translateY(-100px); 
+    }
+  }
+  
+  @keyframes spin-slow {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+  }
+  
   .animate-typing {
     animation: typing 2s steps(12, end) forwards;
   }
@@ -146,5 +165,13 @@
   
   .animate-typing-delayed-2 {
     animation: typing-delayed-2 6s steps(70, end) forwards;
+  }
+  
+  .animate-float-up {
+    animation: float-up 8s linear infinite;
+  }
+  
+  .animate-spin-slow {
+    animation: spin-slow 20s linear infinite;
   }
 }
