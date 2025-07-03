@@ -7,11 +7,11 @@ const SkillsSection = () => {
       title: "Programming Languages",
       icon: "💻",
       skills: [
-        { name: "Python", level: "Proficient", years: "7yrs" },
-        { name: "Java", level: "Proficient", years: "6yrs" },
-        { name: "JavaScript", level: "Proficient", years: "5yrs" },
-        { name: "TypeScript", level: "Proficient", years: "3yrs" },
-        { name: "C/C++", level: "Proficient", years: "3yrs" },
+        { name: "Python", level: "Advanced", years: "7yrs" },
+        { name: "Java", level: "Advanced", years: "6yrs" },
+        { name: "JavaScript", level: "Advanced", years: "5yrs" },
+        { name: "TypeScript", level: "Advanced", years: "3yrs" },
+        { name: "C/C++", level: "Advanced", years: "3yrs" },
         { name: "PHP", level: "Proficient", years: "3yrs" },
         { name: "SQL", level: "Proficient", years: "3yrs" },
         { name: "Swift", level: "Intermediate", years: "2yrs" }

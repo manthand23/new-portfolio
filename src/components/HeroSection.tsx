@@ -25,7 +25,7 @@ const HeroSection = () => {
       {/* Enhanced Background decoration with floating elements */}
       <div className="absolute inset-0 bg-gradient-secondary opacity-95"></div>
       
-      {/* Enhanced floating elements with more dynamic animations */}
+      {/* AI-themed floating elements with neural network inspired animations */}
       <div className="absolute inset-0">
         <div className="absolute top-20 left-20 w-32 h-32 rounded-full bg-primary/20 blur-xl animate-bounce-gentle"></div>
         <div className="absolute bottom-32 right-32 w-48 h-48 rounded-full bg-lavender/20 blur-2xl animate-bounce-gentle" style={{ animationDelay: '1s' }}></div>
@@ -36,13 +36,27 @@ const HeroSection = () => {
         <div className="absolute bottom-10 left-1/2 w-28 h-28 rounded-full bg-primary/15 blur-2xl animate-bounce-gentle" style={{ animationDelay: '3s' }}></div>
       </div>
 
-      {/* Enhanced geometric shapes with varied animations */}
+      {/* AI Neural Network Pattern */}
       <div className="absolute inset-0 overflow-hidden">
-        <div className="absolute top-32 right-20 w-4 h-4 bg-foreground/20 rotate-45 animate-glow-pulse" style={{ animationDelay: '0.8s' }}></div>
-        <div className="absolute bottom-40 left-32 w-6 h-6 bg-primary/30 rotate-12 animate-glow-pulse" style={{ animationDelay: '1.2s' }}></div>
-        <div className="absolute top-2/3 right-1/3 w-3 h-3 bg-lavender/40 rounded-full animate-glow-pulse" style={{ animationDelay: '0.3s' }}></div>
-        <div className="absolute top-1/3 left-20 w-5 h-5 bg-accent/25 rotate-45 animate-glow-pulse" style={{ animationDelay: '1.8s' }}></div>
-        <div className="absolute bottom-1/3 right-20 w-2 h-2 bg-primary/35 rounded-full animate-glow-pulse" style={{ animationDelay: '2.2s' }}></div>
+        {/* Neural nodes */}
+        <div className="absolute top-32 right-20 w-3 h-3 bg-primary/60 rounded-full animate-glow-pulse" style={{ animationDelay: '0.8s' }}></div>
+        <div className="absolute bottom-40 left-32 w-4 h-4 bg-lavender/80 rounded-full animate-glow-pulse" style={{ animationDelay: '1.2s' }}></div>
+        <div className="absolute top-2/3 right-1/3 w-2 h-2 bg-accent/70 rounded-full animate-glow-pulse" style={{ animationDelay: '0.3s' }}></div>
+        <div className="absolute top-1/3 left-20 w-3 h-3 bg-primary/50 rounded-full animate-glow-pulse" style={{ animationDelay: '1.8s' }}></div>
+        <div className="absolute bottom-1/3 right-20 w-2 h-2 bg-lavender/60 rounded-full animate-glow-pulse" style={{ animationDelay: '2.2s' }}></div>
+        <div className="absolute top-1/2 right-10 w-3 h-3 bg-accent/80 rounded-full animate-glow-pulse" style={{ animationDelay: '1.5s' }}></div>
+        <div className="absolute bottom-1/2 left-10 w-2 h-2 bg-primary/70 rounded-full animate-glow-pulse" style={{ animationDelay: '2.8s' }}></div>
+        
+        {/* Neural connections */}
+        <div className="absolute top-32 right-20 w-16 h-0.5 bg-gradient-to-r from-primary/30 to-transparent rotate-45 animate-glow-pulse" style={{ animationDelay: '1s' }}></div>
+        <div className="absolute bottom-40 left-32 w-12 h-0.5 bg-gradient-to-r from-lavender/40 to-transparent -rotate-12 animate-glow-pulse" style={{ animationDelay: '1.4s' }}></div>
+        <div className="absolute top-2/3 right-1/3 w-20 h-0.5 bg-gradient-to-r from-accent/30 to-transparent rotate-12 animate-glow-pulse" style={{ animationDelay: '0.5s' }}></div>
+        <div className="absolute top-1/3 left-20 w-14 h-0.5 bg-gradient-to-r from-primary/40 to-transparent -rotate-45 animate-glow-pulse" style={{ animationDelay: '2s' }}></div>
+        
+        {/* Code-like elements */}
+        <div className="absolute top-20 left-1/2 text-primary/30 text-xs font-mono animate-glow-pulse" style={{ animationDelay: '1.6s' }}>{'{ AI }'}</div>
+        <div className="absolute bottom-20 right-1/3 text-lavender/40 text-xs font-mono animate-glow-pulse" style={{ animationDelay: '2.4s' }}>{'< ML />'}</div>
+        <div className="absolute top-1/4 left-1/4 text-accent/30 text-xs font-mono animate-glow-pulse" style={{ animationDelay: '3.2s' }}>{'def()'}</div>
       </div>
       
       <div className="relative z-10 text-center px-6 max-w-4xl mx-auto">
